@@ -2,4 +2,287 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  letter-spacing: 0.02rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Google Fonts */
+
+/* Título -> Playfair Display #590159
+Subtítulo -> Montserrat #8B0000
+Texto pequeno -> Open Sans #000 */
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.open-sans {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Classes globais */
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+
+  color: #590159;
+}
+
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+
+  color: #8B0000;
+}
+
+.little-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  text-align: center;
+
+  width: 75%;
+}
+
+/* Background */
+
+#img-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background:
+    linear-gradient(rgba(183, 164, 204, 0.85), rgba(183, 164, 204, 0.85)),
+    url("./assets/background.jpeg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  z-index: -1;
+}
+
+/* Início primeira div */
+
+#primary-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+#perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+
+  width: 50%;
+  height: 100vh;
+}
+
+#foto {
+  width: 60%;
+  height: 55%;
+
+  border-radius: 100%;
+}
+
+#texts-primary-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 50%;
+  height: 100vh;
+
+  margin-right: 5%;
+}
+
+/* Fim primeira div */
+
+/* Início segunda div */
+
+#second-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Fim segunda div */
+
+
+/* Início div imagens tattoo */
+
+#img-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-tattoo {
+  width: calc(25% - 1.5%);
+  height: auto;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+
+  margin: 1.5% 1.5%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.img-tattoo:hover {
+  transform: scale(1.05);
+  /* Zoom leve */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  /* Sombra mais intensa */
+  border: 2px solid #590159;
+  /* Adiciona uma borda colorida */
+}
+
+.img-tattoo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fim div imagens tattoo */
+
+/* Início terceira div */
+
+#thirdy-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+#text-sinal {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  text-align: center;
+
+  width: 50%;
+
+  margin-bottom: 1%;
+}
+
+.pay {
+  display: flex;
+  justify-content: center;
+}
+
+/* Fim terceira div */
+
+/* Início quarta div */
+
+#fourty-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.care-tips-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.care-tip {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-left: 4px solid #8B0000;
+  background: #fdfdfd;
+  border-radius: 8px;
+}
+
+/* Fim quarta div */
+
+/* Início quinta div */
+
+#fifty-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+/* Fim quinta div */
+
+/* Início sexta div */
+
+#sixty-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+/* Fim sexta div */
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+  height: 60px;
+  padding: 10px 20px;
+
+  background: linear-gradient(90deg, #5a365a, #7a477a);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-top: 2px solid #452d45;
+
+  transition: all 0.3s ease-in-out;
+}
+
+#footer:hover {
+  background: linear-gradient(90deg, #7a477a, #5a365a);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-size: 22px;
 }
