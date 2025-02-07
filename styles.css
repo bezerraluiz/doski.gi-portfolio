@@ -509,4 +509,8 @@ html {
   #footer {
     font-size: 14px;
   }
+
+  #perfil {
+    gap: 20px;
+  }
 }
