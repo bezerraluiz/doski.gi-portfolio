@@ -70,7 +70,8 @@ Texto pequeno -> Open Sans #000 */
   height: 100vh;
 
   background:
-    linear-gradient(rgba(183, 164, 204, 0.85), rgba(183, 164, 204, 0.85)),
+    linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)),
+    /* #B7A4CCD8 (183, 164, 204, 0.85) */
     url("./assets/background.jpeg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
@@ -100,8 +101,8 @@ Texto pequeno -> Open Sans #000 */
 }
 
 #foto {
-  width: 60%;
-  height: 55%;
+  width: 600px;
+  height: 600px;
 
   border-radius: 100%;
 }
