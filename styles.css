@@ -407,6 +407,16 @@ html {
   width: 50%;
 }
 
+#img-inicio {
+  width: 500px;
+  height: 500px;
+
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media (min-width: 1441px) and (max-width: 2560px) {}
 
 @media (min-width: 1025px) and (max-width: 1440px) {
