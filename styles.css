@@ -359,7 +359,7 @@ html {
   margin-top: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .nav-button {
@@ -469,7 +469,7 @@ html {
     height: 400px;
 
     position: absolute;
-    top: 52%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
