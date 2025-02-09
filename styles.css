@@ -359,6 +359,7 @@ html {
   margin-top: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: 999;
 }
 
 .nav-button {
