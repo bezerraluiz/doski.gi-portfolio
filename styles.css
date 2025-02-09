@@ -135,8 +135,8 @@ html {
   left: 0;
   min-width: 100vw;
   width: 100vw;
-  min-height: 100vh;
-  height: 100vh;
+  min-height: 100%;
+  height: 100%;
   background:
     linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)),
     url("./assets/background.jpeg") no-repeat center center;
@@ -411,6 +411,7 @@ html {
 }
 
 #img-inicio {
+  max-width: 100vw;
   width: 500px;
   height: 500px;
 
@@ -430,6 +431,11 @@ html {
 @media (min-width: 1025px) and (max-width: 1440px) {
   .title {
     font-size: 50px;
+  }
+
+  #foto {
+    width: 500px;
+    height: 500px;
   }
 }
 
@@ -471,7 +477,7 @@ html {
 
   #primary-div {
     flex-direction: column;
-    height: 80vh;
+    height: 95vh;
   }
 
   #foto {
